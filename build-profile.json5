@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\hu'zhan'long\\.ohos\\config\\default_MyApplicationdemo2_UczoOVGAf5iLoPFCUaPkLi4EM1hmFBOjCqFvlkZdObo=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BDA11D409DC42E0E44D2FB4882C26285E0C55832878812A9A2C0F5828FF07BA27D26AF7293BC778",
+          "profile": "C:\\Users\\hu'zhan'long\\.ohos\\config\\default_MyApplicationdemo2_UczoOVGAf5iLoPFCUaPkLi4EM1hmFBOjCqFvlkZdObo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\hu'zhan'long\\.ohos\\config\\default_MyApplicationdemo2_UczoOVGAf5iLoPFCUaPkLi4EM1hmFBOjCqFvlkZdObo=.p12",
+          "storePassword": "0000001BE3283B22485689BF4294582A43952072C5C8AAC6BD0C98748D7E9D1D1467BCD7E48A3778E37882"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
@@ -26,8 +40,8 @@
   },
   "modules": [
     {
-      "name": "entry",
-      "srcPath": "./entry",
+      "name": "default",
+      "srcPath": "./products/default",
       "targets": [
         {
           "name": "default",
@@ -36,6 +50,26 @@
           ]
         }
       ]
+    },
+    {
+      "name": "learning",
+      "srcPath": "./features/learning",
+    },
+    {
+      "name": "quickstart",
+      "srcPath": "./features/quickstart",
+    },
+    {
+      "name": "map",
+      "srcPath": "./features/map",
+    },
+    {
+      "name": "utils",
+      "srcPath": "./commons/utils",
+    },
+    {
+      "name": "uicomponents",
+      "srcPath": "./commons/uicomponents",
     }
   ]
 }
